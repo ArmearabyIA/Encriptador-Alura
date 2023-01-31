@@ -34,26 +34,10 @@ main{
         outline: none;
     }
 
-.contenido{
-    height: 630px;
-    background: white;
-    background-image: url("images/Muñeco.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    border-radius: 24px;
-    color: #0A3871;
-    margin-left: 98px;
-    margin-top: 20px;
-    padding-left: 20px;
-    position: fixed;
+.informacion{
+    color: #495057;
+    font-size: 18px;
 }
-
-.contenido:focus{
-    outline: none;
-}
-
-
 
 .botones-encriptador{
     display: flex;
@@ -81,6 +65,25 @@ main{
     margin-left: 30px;
 }
 
+.contenido{
+    height: 630px;
+    background: white;
+    background-image: url("images/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+
+.contenido:focus{
+    outline: none;
+}
+
 .copiar{
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -93,7 +96,3 @@ main{
     width: 336px;
 }
 
-.informacion{
-    color: #495057;
-    font-size: 18px;
-}
