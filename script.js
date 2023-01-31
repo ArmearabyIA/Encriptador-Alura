@@ -3,25 +3,12 @@ const mensaje = document.querySelector(".contenido");
 const copia = document.querySelector(".copiar");
 copia.style.display = "none";
 
-function validarTexto(){
-    let textoEscrito = document.querySelector(".text-area").value;
-    let validador = textoEscrito.match(/^[a-z]*$/);
-
-    if(!validador || validador==0){
-        alert("Solo son permitidas las letras minúsculas y sin acentuación");
-        location.reload();
-        return true;
-    }
-}
-
 function botonEncriptar(){
-    if(!validarTexto()){
-        const textoEncriptado = encriptar(textArea.value);
-        mensaje.value = textoEncriptado;
-        mensaje.style.backgroundImage = "none";
-        textArea.value = "";
-        copia.style.display = "block";
-    }
+    const textoEncriptado = encriptar(textArea.value);
+    mensaje.value = textoEncriptado;
+    mensaje.style.backgroundImage = "none";
+    textArea.value = "";
+    copia.style.display = "block";
 }
 
 /* Esta seccion incluye como esta configurada la encriptacion para soluciones a futuro
