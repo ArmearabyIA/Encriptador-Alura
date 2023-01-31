@@ -68,5 +68,5 @@ function copiar(){
     mensaje.select();
     navigator.clipboard.writeText(mensaje.value);
     mensaje.value = "";
-    alert("Se copio el texto");
+    alert("Se copió el texto");
 }
